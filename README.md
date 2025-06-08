@@ -34,7 +34,7 @@ In Terminal, go to the directory containing this repo and run the following code
 ```
 sudo cp rebootarr.py /opt
 sudo chown root:wheel /opt/rebootarr.py
-sudo chmod 644 /opt/rebootarr.py
+sudo chmod 750 /opt/rebootarr.py
 
 sudo cp com.rebootarr.autostart.plist /Library/LaunchDaemons/com.rebootarr.autostart.plist
 sudo chown root:wheel /Library/LaunchDaemons/com.rebootarr.autostart.plist
