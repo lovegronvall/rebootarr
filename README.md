@@ -9,7 +9,7 @@ echo 1 >tmp/reboot
 ```
 
 
-## Installation
+## Installation (macOS)
 ```
 sudo mv rebootarr.py /opt
 sudo chown root:wheel /opt/rebootarr.py
