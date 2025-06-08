@@ -4,14 +4,15 @@ import os
 import time
 
 reboot_file = "/tmp/reboot"
-reboot_command = "/sbin/reboot"
+reboot_command = "reboot"
 reboot_password = "1"
-sleep_time = 60
+sleep_time = 5
 
 def main():
 
     # Lets not get stuck in endless reboot cycle:
-    os.remove(reboot_file)
+    if os.path.exists(reboot_file):
+        os.remove(reboot_file)
 
     while True:
 
@@ -22,7 +23,7 @@ def main():
                 print(f"File content is {reboot_password}, time to reboot: {reboot_command}")
                 os.system(reboot_command)
             else:
-                print(f"File found, but incorrect password")
+                print(f"File found, but incorrect password: {content}")
         except FileNotFoundError:
             print(f"File not found: {reboot_file}")
         except Exception as e:
@@ -32,4 +33,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
