@@ -1,3 +1,4 @@
+```
    .
            .                 .          .                               .
   _|__:                          .    . .      ·
@@ -16,6 +17,7 @@ _/_/     |__|_|____/    \____|_/_|____        ·:::::·  .·
 \_\_|____|  : |              |   |   \_____|__/
     |    :    .              .   .         |
     .                                      .
+```
 # rebootarr
 Reboot server by writing to a file (from for example a container)
 
