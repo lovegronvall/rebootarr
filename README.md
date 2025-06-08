@@ -10,6 +10,7 @@ echo 1 >tmp/reboot
 
 
 ## Installation (macOS)
+In Terminal, go to the directory containing this repo and run the following code. It should activate after your next reboot:
 ```
 sudo cp rebootarr.py /opt
 sudo chown root:wheel /opt/rebootarr.py
