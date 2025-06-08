@@ -1,5 +1,5 @@
 # rebootarr
-Reboot mac server by writing to a file (from for example a container)
+Reboot server by writing to a file (from for example a container)
 
 Default file is /tmp/reboot and the content it should have for a reboot is simply 1
 
